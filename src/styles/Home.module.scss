@@ -1,0 +1,49 @@
+@import "@styles/settings/_settings";
+
+.products {
+
+  display: grid;
+  grid-template-columns: repeat(3, calc(33.33% - 1.33em));
+  grid-gap: 2em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media ( max-width: 768px ) {
+    grid-template-columns: repeat(2, calc(50% - 1em));
+  }
+
+  @media ( max-width: 640px ) {
+    grid-template-columns: repeat(1, 100%);
+  }
+
+  img {
+    width: 100%;
+  }
+
+}
+
+.productsTitle {
+  font-size: 1.1em;
+  margin-top: .5em;
+}
+
+.productActions {
+
+  a,
+  button {
+
+    margin-bottom: .5em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+}
+
+.actionsContainer {
+  display: flex;
+  justify-content: flex-end;
+}
