@@ -20,6 +20,18 @@ export default function Dashboard() {
       prev[current.name] = current.value;
       return prev;
     }, {});
+
+    const results = await fetch('/api/products/update', {
+      method: 'POST',
+      body: JSON.stringify({
+        id: router.query.id,
+        ...product
+      })
+    }).then(r => r.json())
+
+    if ( results?.results?.update_hashes?.includes(router.query.id) ) {
+      router.push(`/`);
+    }
   }
 
   return (

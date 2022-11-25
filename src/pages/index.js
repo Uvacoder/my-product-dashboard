@@ -15,7 +15,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function Dashboard() {
   const router = useRouter();
-  const { data = {}, error } = useSWR('/api/all-products', fetcher)
+  const { data = {}, error } = useSWR('/api/products/list', fetcher)
   const { products } = data;
 
   return (

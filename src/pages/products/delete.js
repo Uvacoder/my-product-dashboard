@@ -11,6 +11,16 @@ export default function Dashboard() {
   const router = useRouter();
 
   async function handleOnDelete() {
+    const results = await fetch('/api/products/delete', {
+      method: 'POST',
+      body: JSON.stringify({
+        id: router.query.id
+      })
+    }).then(r => r.json())
+
+    if ( results?.results?.deleted_hashes?.includes(router.query.id) ) {
+      router.push(`/`);
+    }
   }
 
   return (
