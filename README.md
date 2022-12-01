@@ -1,10 +1,10 @@
 # Create a CRUD API with Next.js & HarperDB Custom Functions
 
-Demo for tutorial [How to Create a CRUD API for Ecommerce Product Management with Next.js & HarperDB Custom Functions](https://www.youtube.com/colbyfayock)
+Demo for tutorial [How to Create a CRUD API for Ecommerce Product Management with Next.js & HarperDB Custom Functions](https://www.youtube.com/watch?v=Rf6ORDhdHpU)
 
-📝 Article: Coming Soon...
+📝 Article: https://harperdb.io/blog/create-a-crud-api-w-next-js-harperdb/
 
-📺 Video: Coming Soon...
+📺 Video: https://www.youtube.com/watch?v=Rf6ORDhdHpU
 
 ## More tutorials and walkthroughs
 
